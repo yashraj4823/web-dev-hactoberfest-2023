@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+:root{
+/* ## Gradients */
+
+    --bg-slate-blue : hsl(252, 100%, 67%);
+    --bg-royal-blue: hsl(241, 81%, 54%);
+    --circle-violet-blue: hsla(256, 72%, 46%, 1);
+    --circle-persain-blue: hsla(241, 72%, 46%, 0);
+    --White:hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+/* ################################## styling of image part ######################## */
+.image-part,.content-part{
+    max-width:300px;
+    width:100%;
+    height:400px;
+}
+.image-part{
+    background: linear-gradient(191deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:20px;
+}
+
+.image-part h3{
+    color:var(--light-lavender);
+    font-size:2rem;
+    text-transform:capitalize;
+    padding:1.5em 0;
+}
+.image-part h2{
+    font-size:2.5rem;
+    color:var(--White);
+    padding:1em 0;
+}
+p{
+    font-size:1.5rem;
+    color:var(--light-lavender);
+}
+.score-sec{
+    width:145px;
+    height:145px;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+
+}
+.score-sec h1{
+    font-size: 6rem;
+    color:var(--White);
+}
+
+/* ############################## styling of content part ################################  */
+.content-part{
+    display:flex;
+    flex-direction:column;
+    padding:3em;
+    background:var(--White);
+    border-radius: 0px 20px 20px 0;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-part .score div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    margin:1em 0;
+    padding: 0.2em 0;
+    border-radius:10px;
+
+}
+
+
+.content-part .score div img,
+.content-part .score div p{
+    padding:0 10px;
+}
+.content-part h3{
+    font-size:2rem;
+    text-transform:capitalize;
+}
+.content-part .score div h3{
+    font-size:1.5rem;
+}
+.content-part .score div p{
+    font-weight:500;
+    color:var(--dark-gray-blue);
+}
+.content-part .score div span{
+color:var(--dark-gray-blue);
+font-weight:800;
+}
+
+/* ########################## styling of button ############################# */
+button{
+    margin-top:2em;
+    padding:1em;
+    border-radius:20px;
+    outline:none;
+    border:none;
+    font-size:1.5rem;
+    text-transform:capitalize;
+    background: linear-gradient(191deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:var(--White);
+    cursor:pointer;
+}
+
+button:hover{
+    background:var(--dark-gray-blue);
+}
+
+/*################################  media queries ################################ */
+@media(max-width:648px){
+    body{
+        flex-direction:column;
+    }
+    .image-part{
+        border-radius:20px 20px 0 0;
+    }
+    .image-part,.content-part{
+        max-width:400px;
+        width:100%;
+    }
+    .content-part{
+        box-shadow:none;
+    }
+}
+@media(max-width:400px){
+    .image-part{
+        border-radius:0 0 30px 30px;
+    }
+
+    .image-part{
+        height:100%;
+    }
+}
+@media(max-width:375px){
+    html{
+        font-size:50%;
+    }
+    .image-part p{
+        margin-bottom:10px;
+    }
+
+}
