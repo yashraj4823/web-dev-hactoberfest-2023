@@ -148,6 +148,9 @@ p {
   font-weight: bold;
   cursor: pointer;
 }
+.bg-blue:hover{
+  background-color: hsl(241, 81%, 54%);
+}
 
 @media screen and (max-width: 375px){
   .container {
