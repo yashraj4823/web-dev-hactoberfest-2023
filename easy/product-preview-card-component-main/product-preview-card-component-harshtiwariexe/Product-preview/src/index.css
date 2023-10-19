@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Montserrat&family=Onest:wght@500&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+p button{
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+h1{
+  font-family: 'Young Serif', serif;
+}
+
